@@ -1,6 +1,6 @@
 package bestTimeToBuyAndSellStock;
 
-public class Demo01 {
+public class BestTimeToBuyAndSellStock {
 	public int maxProfit(int[] prices) {
 		int length = prices.length;
 
