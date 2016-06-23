@@ -1,4 +1,4 @@
-package CourseSchedule;
+package courseSchedule;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
-package RemoveDuplicatesII;
+package removeDuplicatesII;
 /**
- * ¿ÕÖ¸ÕëÒì³£
+ * ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ì³£
  * @author Administrator
  *
  */

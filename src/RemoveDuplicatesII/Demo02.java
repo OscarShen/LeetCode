@@ -1,4 +1,4 @@
-package RemoveDuplicatesII;
+package removeDuplicatesII;
 
 public class Demo02 {
 	public static ListNode deleteDuplicates(ListNode head) {

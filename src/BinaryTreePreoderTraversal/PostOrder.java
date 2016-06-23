@@ -1,4 +1,4 @@
-package BinaryTreePreoderTraversal;
+package binaryTreePreoderTraversal;
 
 public class PostOrder {
 

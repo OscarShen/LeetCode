@@ -1,4 +1,4 @@
-package BinaryTreePreoderTraversal;
+package binaryTreePreoderTraversal;
 
 import java.util.Iterator;
 import java.util.List;
@@ -11,14 +11,14 @@ public class APP {
 		n1.right = n2;
 		n2.right = n3;
 
-		System.out.println("=======ÏÈÐò±éÀú=========");
+		System.out.println("=======ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½=========");
 		PreOrder pre = new PreOrder();
 		List<Integer> l = pre.preorderTraversal(n1);
 		Iterator<Integer> it = l.iterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
-		System.out.println("=========ÖÐÐò±éÀú=======");
+		System.out.println("=========ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½=======");
 		MidOrder mid = new MidOrder();
 		l = mid.midorderTraversal(n1);
 		it = l.iterator();

@@ -1,6 +1,6 @@
-package MaximumDepthOfBinaryTree;
+package maximumDepthOfBinaryTree;
 
-import BinaryTreePreoderTraversal.TreeNode;
+import binaryTreePreoderTraversal.TreeNode;
 
 public class APP {
 	public static void main(String[] args) {

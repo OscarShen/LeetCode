@@ -1,4 +1,4 @@
-package ReverseLinkedList;
+package reverseLinkedList;
 
 public class ListNode {
 	int val;

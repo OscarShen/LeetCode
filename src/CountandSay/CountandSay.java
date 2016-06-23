@@ -1,4 +1,4 @@
-package CountandSay;
+package countAndSay;
 
 public class CountandSay {
 	public String countAndSay(int n) {

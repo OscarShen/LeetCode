@@ -1,8 +1,8 @@
-package ProductOfArrayExceptSelf;
+package productOfArrayExceptSelf;
 
 public class ProductOfArrayExceptSelf {
 	/**
-	 * °Ñnums·Ö³ÉÁ½´ÎÀ´³Ë
+	 * ï¿½ï¿½numsï¿½Ö³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param nums
 	 * @return
@@ -12,12 +12,12 @@ public class ProductOfArrayExceptSelf {
 		int[] output = new int[l];
 		output[0] = 1;
 		for (int i = 1; i < l; i++) {
-			output[i] = output[i - 1] * nums[i - 1];// ´æ´¢×ó±ßÊýµÄ³Ë»ý£¬ÓÉÓÚÒÔºó»¹ÒªÓÃ£¬ÏÈ´æÔÚÊý×éÖÐ
+			output[i] = output[i - 1] * nums[i - 1];// ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Òªï¿½Ã£ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
-		int rp = 1;// ÓÃÀ´´æ´¢ÓÒ±ßÊýµÄ³Ë»ý£¬ÓÃÒ»´Î¾Í¿ÉÒÔÌæ»» rightProduct
+		int rp = 1;// ï¿½ï¿½ï¿½ï¿½ï¿½æ´¢ï¿½Ò±ï¿½ï¿½ï¿½Ä³Ë»ï¿½ï¿½ï¿½Ò»ï¿½Î¾Í¿ï¿½ï¿½ï¿½ï¿½æ»» rightProduct
 		for (int i = l - 1; i >= 0; i--) {
 			output[i] *= rp;
-			rp *= nums[i];// ÓÃµôÒ»´Î£¬Ìæ»»³ÉÏÂÒ»¸ö
+			rp *= nums[i];// ï¿½Ãµï¿½Ò»ï¿½Î£ï¿½ï¿½æ»»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 		}
 		return output;
 	}

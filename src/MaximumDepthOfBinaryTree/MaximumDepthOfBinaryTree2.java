@@ -1,9 +1,9 @@
-package MaximumDepthOfBinaryTree;
+package maximumDepthOfBinaryTree;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import BinaryTreePreoderTraversal.TreeNode;
+import binaryTreePreoderTraversal.TreeNode;
 
 public class MaximumDepthOfBinaryTree2 {
 	public int maxDepth(TreeNode root) {

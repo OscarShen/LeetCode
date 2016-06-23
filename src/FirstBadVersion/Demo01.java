@@ -1,3 +1,4 @@
+package firstBadVersion;
 //package FirstBadVersion;
 //
 //public class Demo01 {

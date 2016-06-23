@@ -1,4 +1,4 @@
-package BasicCaculator;
+package basicCaculator;
 
 import java.util.Stack;
 

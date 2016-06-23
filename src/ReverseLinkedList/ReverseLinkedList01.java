@@ -1,4 +1,4 @@
-package ReverseLinkedList;
+package reverseLinkedList;
 
 public class ReverseLinkedList01 {
 	public ListNode reverseList(ListNode head) {

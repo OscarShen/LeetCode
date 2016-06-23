@@ -1,6 +1,6 @@
 package PathSum;
 
-import BinaryTreePreoderTraversal.TreeNode;
+import binaryTreePreoderTraversal.TreeNode;
 
 public class PathSum {
 	public boolean hasPathSum(TreeNode root, int sum) {
