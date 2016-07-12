@@ -1,37 +1,43 @@
 package countAndSay;
 
 public class CountandSay {
+	String msg;
+
+	private int getCount(int begin, String str) {
+		char c = str.charAt(begin);
+		int count = 0;
+		int m = str.length();
+		for (; begin < m; begin++) {
+			if (c == str.charAt(begin)) {
+				count++;
+			} else {
+				break;
+			}
+		}
+		return count;
+	}
+
 	public String countAndSay(int n) {
-		if (n <= 0) {
+		if (n == 0) {
 			return null;
 		}
 		if (n == 1) {
-			return "11";
+			return "1";
 		}
-		StringBuffer sb = new StringBuffer("1");
-		StringBuffer temp;
-		temp = sb;
-		int cur = 0;
-		int count = 1;
-		for (int i = 0; i < n; i++) {
-			char[] chars = sb.toString().toCharArray();
-			int s = sb.length();
-			char t = sb.charAt(cur);
-			while (cur < s) {
-				if (cur + 1 != s && chars[cur + 1] == chars[cur]) {
-					cur++;
-					count++;
-				}
-				cur++;
-				temp.append(t).append(count);
+		msg = "1";
+		for (int i = 2; i <= n; i++) {
+			int begin = 0;
+			StringBuilder sb = new StringBuilder();
+			int m = msg.length();
+			while (begin < m) {
+				char c = msg.charAt(begin);
+				int count = getCount(begin, msg);
+				sb.append(count);
+				sb.append(c);
+				begin += count;
 			}
-			count = 1;
-			sb = temp;
+			msg = sb.toString();
 		}
-		return sb.toString();
-	}
-
-	public static void main(String[] args) {
-		System.out.println(new CountandSay().countAndSay(5));
+		return msg;
 	}
 }
