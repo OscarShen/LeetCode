@@ -4,11 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters {
-	public static void main(String[] args) {
-		String s = "dbdf";
-		System.out.println(new LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(s));
-	}
-
 	public int lengthOfLongestSubstring(String s) {
 		if (s == null) {
 			return 0;
