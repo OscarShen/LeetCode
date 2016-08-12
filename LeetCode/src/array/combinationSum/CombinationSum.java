@@ -1,0 +1,31 @@
+package array.combinationSum;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CombinationSum {
+	public List<List<Integer>> combinationSum(int[] candidates, int target) {
+		List<List<Integer>> res = new ArrayList<>();// ���
+		List<Integer> temp = new ArrayList<>();
+		Arrays.sort(candidates);// �Ƚ�������
+		findComb(candidates, target, 0, 0, res, temp);
+		return res;
+	}
+
+	private void findComb(int[] candidates, int taget, int level, int sum, List<List<Integer>> res,
+			List<Integer> temp) {
+		if (sum == taget) {
+			res.add(new ArrayList<>(temp));
+			return;
+		} else if (sum > taget) {
+			return;
+		} else {
+			for (int i = level; i < candidates.length; i++) {
+				temp.add(candidates[i]);
+				findComb(candidates, taget, i, sum + candidates[i], res, temp);
+				temp.remove(temp.size() - 1);
+			}
+		}
+	}
+}
