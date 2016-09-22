@@ -14,7 +14,7 @@ public class GenerateParentheses {
 		return res;
 	}
 
-	private void solve(int n, int leftNum, String str) {
+	public void solve(int n, int leftNum, String str) {
 		if (str.length() == n * 2) {
 			res.add(str);
 			return;

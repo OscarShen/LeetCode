@@ -5,11 +5,11 @@ import java.util.Stack;
 public class ValidParentheses {
 	public boolean isValid(String s) {
 		if (s == null || s.equals(""))
-			return true;
+			return true; 
 		Stack<Character> stack = new Stack<>();
 
 		char[] chars = s.toCharArray();
-
+		
 		int n = chars.length;
 		for (int i = 0; i < n; i++) {
 			switch (chars[i]) {

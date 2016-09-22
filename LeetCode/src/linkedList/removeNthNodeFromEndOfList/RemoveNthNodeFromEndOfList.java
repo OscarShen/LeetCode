@@ -14,7 +14,6 @@ public class RemoveNthNodeFromEndOfList {
 			stack.push(cur);
 			cur = cur.next;
 		}
-
 		if (n == 1) {
 			stack.pop();
 			stack.peek().next = null;
