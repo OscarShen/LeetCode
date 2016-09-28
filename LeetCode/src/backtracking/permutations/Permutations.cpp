@@ -40,13 +40,3 @@ vector<vector<int>> permute(vector<int>& nums)
 	}
 	return res;
 }
-
-int main() {
-	vector<int> nums{ 1,2,3 };
-	auto res = permute(nums);
-	for (auto list : res) {
-		for (auto i : list)
-			cout << i << " ";
-		cout << endl;
-	}
-}
