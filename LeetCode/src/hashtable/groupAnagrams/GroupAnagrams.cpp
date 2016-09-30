@@ -2,7 +2,6 @@
 #include <string>
 #include <algorithm>
 #include <unordered_map>
-#include <iostream>
 using namespace std;
 
 
@@ -18,14 +17,4 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
 		res.push_back(pair.second);
 	}
 	return res;
-}
-
-int main() {
-	vector<string> v = { "eat", "tea", "tan", "ate", "nat", "bat" };
-	auto res = groupAnagrams(v);
-	for (auto v : res) {
-		for (auto s : v)
-			cout << s << " ";
-		cout << endl;
-	}
 }
