@@ -64,9 +64,3 @@ string addBinary(string a, string b) {
 		return res.substr(1);
 	}
 }
-
-int main() {
-	string a = "0", b = "1";
-	string res = addBinary(a, b);
-	cout << res << endl;
-}
