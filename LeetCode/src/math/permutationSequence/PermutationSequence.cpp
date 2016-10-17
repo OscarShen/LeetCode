@@ -35,9 +35,3 @@ public:
 		return res;
 	}
 };
-
-int main() {
-
-	int n = 8, k = 4444;
-	string res = Solution().getPermutation(n, k);
-}
