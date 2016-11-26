@@ -60,12 +60,3 @@ bool exist(vector<vector<char>>& board, string word) {
 	}
 	return false;
 }
-
-int main() {
-	vector<vector<char>> board{
-		{'A','B','C','E'},
-		{'S','F','C','S' },
-		{'A', 'D', 'E', 'E'}
-	};
-	bool res = exist(board, "ABCB");
-}
