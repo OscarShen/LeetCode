@@ -3,11 +3,13 @@
 using namespace std;
 
 bool isValid(string num) {
-	if (num.length() == 0)
-		return false;
 	int n = atoi(num.c_str());
-	if (0 <= n && n <= 255)
-		return true;
+	if (num.length() == 1)
+		return n >= 0 && n <= 9;
+	else if (num.length() == 2)
+		return n >= 10 && n <= 99;
+	else if (num.length() == 3)
+		return n >= 100 && n <= 255;
 	return false;
 }
 
